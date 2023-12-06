@@ -15,6 +15,7 @@ pipeline {
           timeout: 100000,
           traceLevel: com.uipath.uipathpackage.util.TraceLevel.Info,
           testResultsOutputPath: "result.json",
+          parametersFilePath: null,
           credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: "APIUserKey"]
         )
       }
