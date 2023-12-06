@@ -12,8 +12,7 @@ pipeline {
           orchestratorAddress: "https://cloud.uipath.com/",
           orchestratorTenant: "DefaultTenant",
           folderName: "Shared",
-          timeout: "100000",
-          traceLoggingLevel: 'None',
+          timeout: 100000,
           testResultsOutputPath: "result.json",
           credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: "APIUserKey"]
         )
