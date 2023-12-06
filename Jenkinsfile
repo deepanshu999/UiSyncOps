@@ -13,7 +13,7 @@ pipeline {
           orchestratorTenant: "DefaultTenant",
           folderName: "Shared",
           timeout: 100000,
-          traceLevel: 'Info',
+          traceLevel: com.uipath.uipathpackage.util.TraceLevel.Info,
           testResultsOutputPath: "result.json",
           credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: "APIUserKey"]
         )
